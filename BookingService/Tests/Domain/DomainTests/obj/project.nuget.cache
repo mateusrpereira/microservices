@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gdnJ1VkV9KUiJSz3yoH7OFViGSnjGm+9ZLn+nn6Q8PYfrdYn+nzv4cttTh6PP7vcw9oZuaz0uBsfOwsYErWFYA==",
+  "dgSpecHash": "JhwoDsdA7EM8TOqBAH/Jk3HFcKJg60gbBW8WY3V/7pvSeUOTBFGhPx6rYkBypgCPv2vsy5V9wjP6uezX+y+oCw==",
   "success": true,
   "projectFilePath": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Tests\\Domain\\DomainTests\\DomainTests.csproj",
   "expectedPackageFiles": [

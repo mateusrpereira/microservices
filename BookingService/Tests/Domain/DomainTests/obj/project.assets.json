@@ -381,6 +381,16 @@
             "related": ".xml"
           }
         }
+      },
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
       }
     }
   },
@@ -975,10 +985,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../../../Core/Domain/Domain.csproj",
+      "msbuildProject": "../../../Core/Domain/Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Domain >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
       "NUnit >= 3.13.3",
       "NUnit.Analyzers >= 3.6.1",
@@ -1012,7 +1028,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
