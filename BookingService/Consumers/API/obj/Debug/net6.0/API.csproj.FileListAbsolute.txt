@@ -71,3 +71,5 @@ C:\Users\mateu\source\repos\HotelBooking\BookingService\Consumers\API\bin\Debug\
 C:\Users\mateu\source\repos\HotelBooking\BookingService\Consumers\API\obj\Debug\net6.0\API.sourcelink.json
 C:\Users\mateu\source\repos\HotelBooking\BookingService\Consumers\API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\mateu\source\repos\HotelBooking\BookingService\Consumers\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\mateu\source\repos\HotelBooking\BookingService\Consumers\API\bin\Debug\net6.0\Application.dll
+C:\Users\mateu\source\repos\HotelBooking\BookingService\Consumers\API\bin\Debug\net6.0\Application.pdb
