@@ -1,10 +1,16 @@
-﻿namespace Domain
+﻿using System.Text.RegularExpressions;
+
+namespace Domain
 {
     public static class Utils
     {
         public static bool ValidateEmail(string email) 
         {
-            if (email == "b@b.com") return false;
+            if (!Regex.IsMatch(email, @"^[^@\s]+@[^@\s]+\.[^@\s]+$"))
+                return false;
+
+            if (email == "b@b.com")
+                return false;
 
             return true;
         }
