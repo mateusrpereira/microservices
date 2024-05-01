@@ -7,18 +7,6 @@ using Moq;
 
 namespace ApplicationTests
 {
-/*    class FakeRepo : IGuestRepository
-    {
-        public Task<int> Create(Guest guest)
-        {
-            return Task.FromResult(111);
-        }
-
-        public Task<Guest> Get(int id)
-        {
-            throw new NotImplementedException();
-        }
-    }*/
     public class Tests
     {
         GuestManager guestManager;
@@ -26,8 +14,6 @@ namespace ApplicationTests
         [SetUp]
         public void Setup()
         {
-            //var fakeRepo = new FakeRepo();
-            //guestManager = new GuestManager(fakeRepo);
         }
 
         [Test]
@@ -178,6 +164,51 @@ namespace ApplicationTests
             Assert.False(res.Success);
             Assert.AreEqual(res.ErrorCode, ErrorCodes.INVALID_EMAIL);
             Assert.AreEqual(res.Message, "The given email is not value");
+        }
+
+        [Test]
+        public async Task Should_Return_GuestNotFound_When_GuestDoesntExist()
+        {
+            var fakeRepo = new Mock<IGuestRepository>();
+
+            fakeRepo.Setup(x => x.Get(333)).Returns(Task.FromResult<Guest?>(null));
+
+            guestManager = new GuestManager(fakeRepo.Object);
+
+            var res = await guestManager.GetGuest(333);
+
+            Assert.IsNotNull(res);
+            Assert.False(res.Success);
+            Assert.AreEqual(res.ErrorCode, ErrorCodes.GUEST_NOT_FOUND);
+            Assert.AreEqual(res.Message, "No Guest record was found with the given Id");
+        }
+
+        [Test]
+        public async Task Should_Return_Guest_Success()
+        {
+            var fakeRepo = new Mock<IGuestRepository>();
+
+            var fakeGuest = new Guest
+            {
+                Id = 333,
+                Name = "Test",
+                DocumentId = new Domain.ValueObjects.PersonId
+                {
+                    DocumentType = Domain.Enums.DocumentType.DriveLicence,
+                    IdNumber = "123"
+                }
+            };
+
+            fakeRepo.Setup(x => x.Get(333)).Returns(Task.FromResult((Guest?)fakeGuest));
+
+            guestManager = new GuestManager(fakeRepo.Object);
+
+            var res = await guestManager.GetGuest(333);
+
+            Assert.IsNotNull(res);
+            Assert.True(res.Success);
+            Assert.AreEqual(res.Data.Id, fakeGuest.Id);
+            Assert.AreEqual(res.Data.Name, fakeGuest.Name);
         }
     }
 }

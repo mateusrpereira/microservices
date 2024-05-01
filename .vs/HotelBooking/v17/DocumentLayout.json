@@ -5,18 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{27BBD7D3-C53F-4FD5-AFCC-6FD32BF7E728}|BookingService\\Tests\\Application\\ApplicationTests\\ApplicationTests.csproj|c:\\users\\mateu\\source\\repos\\hotelbooking\\bookingservice\\tests\\application\\applicationtests\\guestmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{27BBD7D3-C53F-4FD5-AFCC-6FD32BF7E728}|BookingService\\Tests\\Application\\ApplicationTests\\ApplicationTests.csproj|solutionrelative:bookingservice\\tests\\application\\applicationtests\\guestmanagertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{556DCF14-103A-46BD-8F53-393A8CA790FA}|BookingService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\hotelbooking\\bookingservice\\core\\domain\\entities\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{556DCF14-103A-46BD-8F53-393A8CA790FA}|BookingService\\Core\\Domain\\Domain.csproj|solutionrelative:bookingservice\\core\\domain\\entities\\guest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{50B67158-E1BE-4DE5-B739-647678DC22CE}|BookingService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\hotelbooking\\bookingservice\\core\\application\\guestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{50B67158-E1BE-4DE5-B739-647678DC22CE}|BookingService\\Core\\Application\\Application.csproj|solutionrelative:bookingservice\\core\\application\\guestmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{556DCF14-103A-46BD-8F53-393A8CA790FA}|BookingService\\Core\\Domain\\Domain.csproj|c:\\users\\mateu\\source\\repos\\hotelbooking\\bookingservice\\core\\domain\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{556DCF14-103A-46BD-8F53-393A8CA790FA}|BookingService\\Core\\Domain\\Domain.csproj|solutionrelative:bookingservice\\core\\domain\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,51 +14,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 315,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GuestManager.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\GuestManager.cs",
-              "RelativeDocumentMoniker": "BookingService\\Core\\Application\\GuestManager.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\GuestManager.cs",
-              "RelativeToolTip": "BookingService\\Core\\Application\\GuestManager.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAAAYwDMAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-28T19:53:56.045Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Utils.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Utils.cs",
-              "RelativeDocumentMoniker": "BookingService\\Core\\Domain\\Utils.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Utils.cs",
-              "RelativeToolTip": "BookingService\\Core\\Domain\\Utils.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T21:44:19.848Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Guest.cs",
-              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Entities\\Guest.cs",
-              "RelativeDocumentMoniker": "BookingService\\Core\\Domain\\Entities\\Guest.cs",
-              "ToolTip": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Domain\\Entities\\Guest.cs",
-              "RelativeToolTip": "BookingService\\Core\\Domain\\Entities\\Guest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T21:21:39.136Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,9 +28,9 @@
               "RelativeDocumentMoniker": "BookingService\\Tests\\Application\\ApplicationTests\\GuestManagerTests.cs",
               "ToolTip": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Tests\\Application\\ApplicationTests\\GuestManagerTests.cs",
               "RelativeToolTip": "BookingService\\Tests\\Application\\ApplicationTests\\GuestManagerTests.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABgAAAAAAAAA",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T20:46:05.788Z",
+              "WhenOpened": "2024-05-01T23:12:35.44Z",
               "EditorCaption": ""
             }
           ]
