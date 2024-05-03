@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Application.Guest.Ports;
-using Application.Guest.DTO;
+using Application.Guest.Dtos;
 using Application;
 using Application.Guest.Requests;
 

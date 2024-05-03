@@ -1,7 +1,7 @@
 ﻿using Entities = Domain.Entities;
 using Domain.Enums;
 
-namespace Application.Guest.DTO
+namespace Application.Guest.Dtos
 {
     public class GuestDTO
     {
@@ -11,7 +11,7 @@ namespace Application.Guest.DTO
         public string Email { get; set; }
         public string IdNumber { get; set; }
         public int IdTypeCode { get; set; }
-        public static Entities.Guest MapToEntity(GuestDTO guestDTO)
+        public static Domain.Entities.Guest MapToEntity(GuestDTO guestDTO)
         {
             return new Entities.Guest
             {
@@ -27,8 +27,7 @@ namespace Application.Guest.DTO
                 }
             };
         }
-
-        public static GuestDTO MapToDto(Entities.Guest guest)
+        public static GuestDTO MapToDto(Domain.Entities.Guest guest)
         {
             return new GuestDTO
             {

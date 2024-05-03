@@ -2,7 +2,6 @@
 using Domain.Ports;
 using Domain.ValueObjects;
 
-
 namespace Domain.Entities
 {
     public class Guest
@@ -11,7 +10,7 @@ namespace Domain.Entities
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Email { get; set; }
-        public PersonId DocumentId {  get; set; }
+        public PersonId DocumentId { get; set; }
         private void ValidateState()
         {
             if (string.IsNullOrEmpty(DocumentId.IdNumber) ||
@@ -21,26 +20,25 @@ namespace Domain.Entities
                 throw new InvalidPersonDocumentIdException();
             }
 
-            if (string.IsNullOrEmpty(Name) || 
-                string.IsNullOrEmpty(Surname) || 
+            if (string.IsNullOrEmpty(Name) ||
+                string.IsNullOrEmpty(Surname) ||
                 string.IsNullOrEmpty(Email))
             {
                 throw new MissingRequiredInformation();
             }
 
-            if (Utils.ValidateEmail(this.Email) == false)
+            if (Utils.ValidateEmail(Email) == false)
             {
                 throw new InvalidEmailExceptions();
             }
         }
-
         public async Task Save(IGuestRepository guestRepository)
         {
-            this.ValidateState();
+            ValidateState();
 
-            if (this.Id == 0)
+            if (Id == 0)
             {
-                this.Id = await guestRepository.Create(this);
+                Id = await guestRepository.Create(this);
             }
             else
             {

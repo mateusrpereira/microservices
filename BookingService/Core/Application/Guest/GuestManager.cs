@@ -1,11 +1,11 @@
-﻿using Application.Guest.DTO;
+﻿using Application.Guest.Dtos;
 using Application.Guest.Ports;
 using Application.Guest.Requests;
 using Application.Guest.Responses;
 using Domain.Exceptions;
 using Domain.Ports;
 
-namespace Application
+namespace Application.Guest
 {
     public class GuestManager : IGuestManager
     {
@@ -68,7 +68,6 @@ namespace Application
                 };
             }
         }
-
         public async Task<GuestResponse> GetGuest(int guestId)
         {
             var guest = await _guestRepository.Get(guestId);
