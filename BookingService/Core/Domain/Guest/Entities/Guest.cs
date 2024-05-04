@@ -27,10 +27,15 @@ namespace Domain.Entities
                 throw new MissingRequiredInformation();
             }
 
-            if (Utils.ValidateEmail(Email) == false)
+            if (Utils.ValidateEmail(this.Email) == false)
             {
                 throw new InvalidEmailExceptions();
             }
+        }
+        public bool IsValid()
+        {
+            this.ValidateState();
+            return true;
         }
         public async Task Save(IGuestRepository guestRepository)
         {

@@ -18,7 +18,7 @@ namespace Application.Guest
         {
             try
             {
-                var guest = GuestDTO.MapToEntity(request.Data);
+                var guest = GuestDto.MapToEntity(request.Data);
 
                 //request.Data.Id = await _guestRepository.Create(guest);
                 await guest.Save(_guestRepository);
@@ -84,7 +84,7 @@ namespace Application.Guest
 
             return new GuestResponse
             {
-                Data = GuestDTO.MapToDto(guest),
+                Data = GuestDto.MapToDto(guest),
                 Success = true,
             };
         }

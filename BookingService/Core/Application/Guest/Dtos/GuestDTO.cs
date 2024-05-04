@@ -3,7 +3,7 @@ using Domain.Enums;
 
 namespace Application.Guest.Dtos
 {
-    public class GuestDTO
+    public class GuestDto
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -11,7 +11,7 @@ namespace Application.Guest.Dtos
         public string Email { get; set; }
         public string IdNumber { get; set; }
         public int IdTypeCode { get; set; }
-        public static Domain.Entities.Guest MapToEntity(GuestDTO guestDTO)
+        public static Domain.Entities.Guest MapToEntity(GuestDto guestDTO)
         {
             return new Entities.Guest
             {
@@ -27,9 +27,9 @@ namespace Application.Guest.Dtos
                 }
             };
         }
-        public static GuestDTO MapToDto(Domain.Entities.Guest guest)
+        public static GuestDto MapToDto(Domain.Entities.Guest guest)
         {
-            return new GuestDTO
+            return new GuestDto
             {
                 Id = guest.Id,
                 Email = guest.Email,

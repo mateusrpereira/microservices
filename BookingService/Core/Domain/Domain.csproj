@@ -7,7 +7,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DomainEvents\" />
+    <Compile Remove="Booking\NovaPasta1\**" />
+    <Compile Remove="Booking\NovaPasta2\**" />
+    <Compile Remove="Booking\NovaPasta\**" />
+    <Compile Remove="DomainEvents\**" />
+    <EmbeddedResource Remove="Booking\NovaPasta1\**" />
+    <EmbeddedResource Remove="Booking\NovaPasta2\**" />
+    <EmbeddedResource Remove="Booking\NovaPasta\**" />
+    <EmbeddedResource Remove="DomainEvents\**" />
+    <None Remove="Booking\NovaPasta1\**" />
+    <None Remove="Booking\NovaPasta2\**" />
+    <None Remove="Booking\NovaPasta\**" />
+    <None Remove="DomainEvents\**" />
   </ItemGroup>
 
 </Project>
