@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DD09E9A8-91D0-4054-B020-9AA0B26D0BA9}|PaymentService\\Core\\Application\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\hotelbooking\\paymentservice\\core\\application\\application\\mercadopago\\mercadopagoadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DD09E9A8-91D0-4054-B020-9AA0B26D0BA9}|PaymentService\\Core\\Application\\Application\\Application.csproj|solutionrelative:paymentservice\\core\\application\\application\\mercadopago\\mercadopagoadapter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B67158-E1BE-4DE5-B739-647678DC22CE}|BookingService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\hotelbooking\\bookingservice\\core\\application\\payment\\responses\\paymentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B67158-E1BE-4DE5-B739-647678DC22CE}|BookingService\\Core\\Application\\Application.csproj|solutionrelative:bookingservice\\core\\application\\payment\\responses\\paymentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B67158-E1BE-4DE5-B739-647678DC22CE}|BookingService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\hotelbooking\\bookingservice\\core\\application\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B67158-E1BE-4DE5-B739-647678DC22CE}|BookingService\\Core\\Application\\Application.csproj|solutionrelative:bookingservice\\core\\application\\response.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{50B67158-E1BE-4DE5-B739-647678DC22CE}|BookingService\\Core\\Application\\Application.csproj|c:\\users\\mateu\\source\\repos\\hotelbooking\\bookingservice\\core\\application\\payment\\dtos\\paymentstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{50B67158-E1BE-4DE5-B739-647678DC22CE}|BookingService\\Core\\Application\\Application.csproj|solutionrelative:bookingservice\\core\\application\\payment\\dtos\\paymentstatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 315,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Response.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Response.cs",
+              "RelativeDocumentMoniker": "BookingService\\Core\\Application\\Response.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Response.cs",
+              "RelativeToolTip": "BookingService\\Core\\Application\\Response.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwB4AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:28:57.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentResponse.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Payment\\Responses\\PaymentResponse.cs",
+              "RelativeDocumentMoniker": "BookingService\\Core\\Application\\Payment\\Responses\\PaymentResponse.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Payment\\Responses\\PaymentResponse.cs",
+              "RelativeToolTip": "BookingService\\Core\\Application\\Payment\\Responses\\PaymentResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T18:17:28.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MercadoPagoAdapter.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\PaymentService\\Core\\Application\\Application\\MercadoPago\\MercadoPagoAdapter.cs",
+              "RelativeDocumentMoniker": "PaymentService\\Core\\Application\\Application\\MercadoPago\\MercadoPagoAdapter.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\PaymentService\\Core\\Application\\Application\\MercadoPago\\MercadoPagoAdapter.cs",
+              "RelativeToolTip": "PaymentService\\Core\\Application\\Application\\MercadoPago\\MercadoPagoAdapter.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:28:15.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PaymentStateDto.cs",
+              "DocumentMoniker": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Payment\\Dtos\\PaymentStateDto.cs",
+              "RelativeDocumentMoniker": "BookingService\\Core\\Application\\Payment\\Dtos\\PaymentStateDto.cs",
+              "ToolTip": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Payment\\Dtos\\PaymentStateDto.cs",
+              "RelativeToolTip": "BookingService\\Core\\Application\\Payment\\Dtos\\PaymentStateDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-06T17:08:08.84Z",
+              "EditorCaption": ""
             }
           ]
         }

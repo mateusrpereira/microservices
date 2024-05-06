@@ -894,6 +894,19 @@
         "runtime": {
           "bin/placeholder/Domain.dll": {}
         }
+      },
+      "Payments.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Application": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Payments.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Payments.Application.dll": {}
+        }
       }
     }
   },
@@ -2443,6 +2456,11 @@
       "type": "project",
       "path": "../../Core/Domain/Domain.csproj",
       "msbuildProject": "../../Core/Domain/Domain.csproj"
+    },
+    "Payments.Application/1.0.0": {
+      "type": "project",
+      "path": "../../../PaymentService/Core/Application/Application/Payments.Application.csproj",
+      "msbuildProject": "../../../PaymentService/Core/Application/Application/Payments.Application.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -2450,6 +2468,7 @@
       "Application >= 1.0.0",
       "Data >= 1.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.29",
+      "Payments.Application >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.5.0"
     ]
   },
@@ -2485,6 +2504,9 @@
             },
             "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj": {
               "projectPath": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\BookingService\\Core\\Application\\Application.csproj"
+            },
+            "C:\\Users\\mateu\\source\\repos\\HotelBooking\\PaymentService\\Core\\Application\\Application\\Payments.Application.csproj": {
+              "projectPath": "C:\\Users\\mateu\\source\\repos\\HotelBooking\\PaymentService\\Core\\Application\\Application\\Payments.Application.csproj"
             }
           }
         }
