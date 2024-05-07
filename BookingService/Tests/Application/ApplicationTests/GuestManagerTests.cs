@@ -147,7 +147,6 @@ namespace ApplicationTests
                 IdTypeCode = 1
             };
 
-
             var request = new CreateGuestRequest()
             {
                 Data = guestDto,

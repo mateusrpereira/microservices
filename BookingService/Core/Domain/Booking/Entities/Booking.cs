@@ -1,7 +1,6 @@
 ﻿using Domain.Booking.Exceptions;
 using Domain.Booking.Ports;
 using Domain.Enums;
-using Domain.Guest.Exceptions;
 using Action = Domain.Enums.Action;
 
 namespace Domain.Entities
@@ -13,6 +12,7 @@ namespace Domain.Entities
             Status = Status.Created;
             PlacedAt = DateTime.UtcNow;
         }
+
         public int Id { get; set; }
         public DateTime PlacedAt { get; set; }
         public DateTime Start { get; set; }
@@ -20,6 +20,7 @@ namespace Domain.Entities
         public Room Room { get; set; }
         public Guest Guest { get; set; }
         public Status Status { get; set; }
+
         public void ChangeState(Action action)
         {
             Status = (Status, action) switch
@@ -45,6 +46,7 @@ namespace Domain.Entities
                 return false;
             }
         }
+
         private void ValidateState()
         {
             if (PlacedAt == default)
@@ -72,6 +74,7 @@ namespace Domain.Entities
                 throw new GuestIsRequiredException();
             }
         }
+
         public async Task Save(IBookingRepository bookingRepository)
         {
             ValidateState();
@@ -93,7 +96,5 @@ namespace Domain.Entities
 
             }
         }
-
-
     }
 }

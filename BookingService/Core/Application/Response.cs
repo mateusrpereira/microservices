@@ -29,6 +29,7 @@ namespace Application
 
         // Payment related codes 500 - 1500
         PAYMENT_INVALID_PAYMENT_INTENTION = 500,
+        PAYMENT_PROVIDER_NOT_IMPLEMENTED = 501,
 
     }
     public abstract class Response

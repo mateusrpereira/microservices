@@ -12,7 +12,6 @@ namespace API.Controllers
     {
         private readonly ILogger<GuestController> _logger;
         private readonly IRoomManager _roomManager;
-
         public RoomController(ILogger<GuestController> logger, IRoomManager roomManager)
         {
             _logger = logger;

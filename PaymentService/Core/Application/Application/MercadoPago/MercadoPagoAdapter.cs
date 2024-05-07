@@ -5,56 +5,46 @@ using Application.Payment.Responses;
 
 namespace Application.MercadoPago
 {
-    public class MercadoPagoAdapter : IMercadoPagoPaymentService
+    public class MercadoPagoAdapter : IPaymentProcessor
     {
-        public Task<PaymentResponse> PayBankTransfer(string paymentIntention)
+        public Task<PaymentResponse> CapturePayment(string paymentIntention)
         {
-            throw new NotImplementedException();
-        }
-
-        public Task<PaymentResponse> PayWithCreditCard(string paymentIntention)
-        {
-            try
-            {
-                if (string.IsNullOrEmpty(paymentIntention))
+			try
+			{
+                if (string.IsNullOrWhiteSpace(paymentIntention))
                 {
                     throw new InvalidPaymentIntentionException();
                 }
 
-                paymentIntention = "/success";
+                paymentIntention += "/success";
 
-                var dto = new PaymentStateDto()
+                var dto = new PaymentStateDto
                 {
-                    CreatedDate = DateTime.UtcNow,
+                    CreatedDate = DateTime.Now,
                     Message = $"Successfully paid {paymentIntention}",
                     PaymentId = "123",
-                    Status = Status.Succes,
+                    Status = Status.Success
                 };
 
                 var response = new PaymentResponse
                 {
                     Data = dto,
                     Success = true,
-                    Message = "Payment successfully processed",
+                    Message = "Payment successfully processed"
                 };
 
                 return Task.FromResult(response);
             }
-            catch (InvalidPaymentIntentionException)
-            {
-                var res = new PaymentResponse() 
+			catch (InvalidPaymentIntentionException)
+			{
+                var resp = new PaymentResponse()
                 {
                     Success = false,
                     ErrorCode = ErrorCodes.PAYMENT_INVALID_PAYMENT_INTENTION,
+                    Message = "The selected payment intention is invalid"
                 };
-
-                return Task.FromResult(res);
+                return Task.FromResult(resp);
             }
-        }
-
-        public Task<PaymentResponse> PayWithDebitCard(string paymentIntention)
-        {
-            throw new NotImplementedException();
         }
     }
 }

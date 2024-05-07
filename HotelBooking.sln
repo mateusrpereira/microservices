@@ -45,7 +45,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{704333D2-DEF0-49A8-BA36-23B68A517461}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.Application", "PaymentService\Core\Application\Application\Payments.Application.csproj", "{DD09E9A8-91D0-4054-B020-9AA0B26D0BA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Payments.Application", "PaymentService\Core\Application\Application\Payments.Application.csproj", "{DD09E9A8-91D0-4054-B020-9AA0B26D0BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.UnitTests", "PaymentService\Payments.UnitTests\Payments.UnitTests.csproj", "{83CE896F-1736-4F33-8E28-BE46E00C05CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -85,6 +87,10 @@ Global
 		{DD09E9A8-91D0-4054-B020-9AA0B26D0BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD09E9A8-91D0-4054-B020-9AA0B26D0BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD09E9A8-91D0-4054-B020-9AA0B26D0BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83CE896F-1736-4F33-8E28-BE46E00C05CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83CE896F-1736-4F33-8E28-BE46E00C05CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83CE896F-1736-4F33-8E28-BE46E00C05CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83CE896F-1736-4F33-8E28-BE46E00C05CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +116,7 @@ Global
 		{1DC7A6D4-C362-4FE6-A99E-7C7D4B349C74} = {CF5EE276-436F-4864-A0C6-E0E5A5146AD8}
 		{704333D2-DEF0-49A8-BA36-23B68A517461} = {CF5EE276-436F-4864-A0C6-E0E5A5146AD8}
 		{DD09E9A8-91D0-4054-B020-9AA0B26D0BA9} = {1DC7A6D4-C362-4FE6-A99E-7C7D4B349C74}
+		{83CE896F-1736-4F33-8E28-BE46E00C05CB} = {72FCE680-DDCC-4C57-B66A-0AA0C6A4E37F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {04FA4055-3536-476A-B06D-F283FDA2D6C9}
