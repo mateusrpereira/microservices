@@ -11,7 +11,7 @@ Disponibilizar endpoint para inclusão de reserva de quartos (Booking).
 
 Disponibilizar endpoint de pagamento de reservas (Payment).
 
-CARACTERÍSTICAS:
+RECURSOS:
 - Gerenciar clientes
 - Gerenciar quartos de hotel
 - Permitir o cliente criar uma reserva
@@ -122,33 +122,15 @@ Add-Migration MigrationHotelBooking
 Update-Database
 ```
 
-## Arquitetura Hexagonal, DDD, TDD
+## Diagramas:
 
--- Tabelas e recursos do banco de dados da aplicação:
+Para melhor visualização e navegação nos diagramas, realizar login no site:
+https://app.diagrams.net/
 
-![image](https://hackmd.io/_uploads/B16lo4KfA.png)
-
--- Visão geral e dependências dos componentes das camadas de serviço:
-
-![image](https://hackmd.io/_uploads/Sy1GiEFGA.png)
-
--- Visão geral dos serviços:
-
-![image](https://hackmd.io/_uploads/HyYMTEFMR.png)
-
-
--- Troca de informações entre as camadas:
-
-![image](https://hackmd.io/_uploads/SJBNoNtMA.png)
-
--- Interação entre as camadas e serviços:
-
-![image](https://hackmd.io/_uploads/SJmBo4FG0.png)
-
-
-![image](https://hackmd.io/_uploads/SkW36NFzC.png)
-
-
+Link dos diagramas e apresentação do projeto:
+```
+https://drive.google.com/file/d/1JgycrlE3Ey_rxts6ZZ7pz3tPkAYr7f83/view?usp=sharing
+```
 
 
 
