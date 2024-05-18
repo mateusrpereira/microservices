@@ -125,12 +125,13 @@ Update-Database
 ## Diagramas:
 
 Para melhor visualização e navegação nos diagramas, realizar login no site:
-https://app.diagrams.net/
+
+- https://app.diagrams.net/
 
 Link dos diagramas e apresentação do projeto:
-```
-https://drive.google.com/file/d/1JgycrlE3Ey_rxts6ZZ7pz3tPkAYr7f83/view?usp=sharing
-```
+
+- https://drive.google.com/file/d/1JgycrlE3Ey_rxts6ZZ7pz3tPkAYr7f83/view?usp=sharing
+
 
 
 
